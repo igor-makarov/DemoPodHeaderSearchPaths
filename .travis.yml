@@ -2,8 +2,8 @@ install: true
 before_script:
   - bundle install
   - bundle exec xcake make
-  - mkdir -p ~/.cocoapods/repos/ || true
-  - travis_retry bundle exec pod install --verbose --repo-update
+  - bundle exec pod setup
+  - bundle exec pod install --verbose --repo-update
 
 script:
   - xcodebuild -workspace DemoPodHeaderSearchPaths.xcworkspace -scheme DemoPodHeaderSearchPaths -sdk iphonesimulator | xcpretty
