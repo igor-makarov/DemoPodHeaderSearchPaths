@@ -7,7 +7,7 @@ use_frameworks!
 # ignore all warnings from all pods
 inhibit_all_warnings!
 
-install! 'cocoapods', deterministic_uuids: false, generate_multiple_pod_projects: true
+install! 'cocoapods', deterministic_uuids: false, generate_multiple_pod_projects: ENV['SEPARATE_PROJECTS'] == '1' 
 
 target 'DemoPodHeaderSearchPaths' do
 

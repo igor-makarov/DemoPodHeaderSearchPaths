@@ -1,14 +1,17 @@
 install: true
+os: osx
+language: objective-c
+
+env:
+  - SEPARATE_PROJECTS=1
+  - SEPARATE_PROJECTS=0
+
+osx_image: xcode10.1
+
 before_script:
   - bundle install
   - bundle exec xcake make
   - bundle exec pod install --verbose --repo-update
 
 script:
-  - xcodebuild -workspace DemoPodHeaderSearchPaths.xcworkspace -scheme DemoPodHeaderSearchPaths -sdk iphonesimulator | xcpretty
-
-matrix:
-  include:
-    - os: osx
-      language: objective-c
-      osx_image: xcode10.1
+  - set -o pipefail && xcodebuild -workspace DemoPodHeaderSearchPaths.xcworkspace -scheme DemoPodHeaderSearchPaths -sdk iphonesimulator | xcpretty
