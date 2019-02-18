@@ -2,6 +2,7 @@ install: true
 before_script:
   - bundle install
   - bundle exec xcake make
+  - mkdir -p ~/.cocoapods/repos/ || true
   - bundle exec pod install --verbose
 
 script:
