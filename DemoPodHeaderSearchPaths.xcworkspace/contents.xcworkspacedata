@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:DemoPodHeaderSearchPaths.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/../.gitignore"
+      assignedFileDataType = "public.ruby-script">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/../.swiftlint.yml"
+      assignedFileDataType = "public.ruby-script">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/../.travis.yml"
+      assignedFileDataType = "public.ruby-script">
+   </FileRef>
+   <FileRef
+      location = "group:Cakefile"
+      assignedFileDataType = "public.ruby-script">
+   </FileRef>
+   <FileRef
+      location = "group:Gemfile"
+      assignedFileDataType = "public.ruby-script">
+   </FileRef>
+   <FileRef
+      location = "group:Podfile"
+      assignedFileDataType = "public.ruby-script">
+   </FileRef>
+   <FileRef
+      location = "group:Readme.md">
+   </FileRef>
+</Workspace>
