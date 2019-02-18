@@ -1,4 +1,4 @@
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://cdn.jsdelivr.net/cocoa/'
 
 platform :ios, '10.0'
 

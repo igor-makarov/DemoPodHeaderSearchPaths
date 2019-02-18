@@ -2,7 +2,6 @@ install: true
 before_script:
   - bundle install
   - bundle exec xcake make
-  - bundle exec pod setup
   - bundle exec pod install --verbose --repo-update
 
 script:
